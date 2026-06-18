@@ -1,3 +1,4 @@
+//creating interface 
 interface Student {
   roll_no: number;
   name: string;
@@ -5,12 +6,14 @@ interface Student {
   phone: string;
 }
 
+//extending it will have all types from its extended interface ,its like merging
 interface Marks extends Student {
   maths: number;
   science: number;
   socialScience: number;
 }
 
+//creating function to print
 function printStudent(student: Marks) {
   console.log(student.roll_no);
   console.log(student.name);
@@ -21,6 +24,7 @@ function printStudent(student: Marks) {
   console.log(student.socialScience);  
 }
 
+//created object to call in function
 const student1: Marks = {
   roll_no: 1,
   name: "Aadil",
@@ -32,4 +36,5 @@ const student1: Marks = {
 };
 
 
+//function call
 printStudent(student1)
