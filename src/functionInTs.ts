@@ -12,3 +12,27 @@ function getMorePizza():string{
     
 }
 console.log(getMorePizza());
+
+
+//Optional Return Type Function
+function getExtraCheese(qty?:boolean){
+
+    return qty
+}
+
+console.log(getExtraCheese(true));
+
+
+//void which doesnt return anything 
+function getChilli():void{
+    console.log("void chilli");
+}
+
+
+//function with default return value
+function defaultItems(type:string="cold-coffee"){
+return type
+}
+
+console.log(defaultItems());
+
